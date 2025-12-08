@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - EBS Partners</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .success-message {
+            background-color: #4caf50;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        #email-link {
+            cursor: pointer;
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        #email-link:hover {
+            color: #0066cc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo-section">
+                <img src="assets/logo.png" alt="EBS Partners Logo" class="logo">
+            </div>
+
+            <!-- Desktop Nav -->
+            <nav class="desktop-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="whyus.html" class="nav-link">Why Us?</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="privacy.html" class="nav-link">Privacy Policy</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span class="hamburger-icon">☰</span>
+            </button>
+
+            <!-- Contact Button (Hidden for layout) -->
+            <a href="contact.html" class="cta-button" style="visibility: hidden;">EBS Partners</a>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div class="mobile-drawer">
+            <div class="drawer-content">
+                <button class="close-drawer-btn">×</button>
+                <nav class="mobile-nav">
+                    <a href="index.html" class="mobile-nav-link">Home</a>
+                    <a href="whyus.html" class="mobile-nav-link">Why Us?</a>
+                    <a href="services.html" class="mobile-nav-link">Services</a>
+                    <a href="contact.html" class="mobile-nav-link">Contact</a>
+                    <a href="privacy.html" class="mobile-nav-link">Privacy Policy</a>
+                </nav>
+            </div>
+            <div class="drawer-overlay"></div>
+        </div>
+    </header>
+
+    <!-- Main Content (Contact) -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section fade-in-up">
+            <h4 class="hero-subtitle">EBS PARTNERS</h4>
+            <h2 class="hero-title">CONTACT</h2>
+        </section>
+
+        <!-- Success Message (Hidden by default) -->
+        <div id="success-message" class="success-message">
+            <h6>Your message was sent successfully! We'll get back to you soon.</h6>
+        </div>
+
+        <!-- Form Section -->
+        <section class="contact-form-section fade-in-up delay-1">
+            <div class="form-container">
+                <h6 class="form-title">Our team would love to hear from you.</h6>
+                <form action="https://formsubmit.co/info@ebspartners.com.au" method="POST">
+                    <!-- FormSubmit Configuration -->
+                    <input type="hidden" name="_subject" value="New Contact Form Submission - EBS Partners">
+                    <input type="hidden" name="_captcha" value="true">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="text" name="_honey" style="display:none">
+
+                    <div class="form-group">
+                        <label for="name" class="sr-only">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Name" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required
+                            class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="sr-only">Message</label>
+                        <textarea id="message" name="message" placeholder="Message" rows="4" required
+                            class="form-input"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Contact Info Section -->
+        <section class="contact-info-section fade-in-up delay-2">
+            <h5 class="info-title">CONTACT US</h5>
+            <p class="info-text">
+                38 Hines Way, Braybrook, VIC 3019<br>
+                Monday – Friday<br>
+                9AM – 6PM<br><br>
+                T: 03 9069 5863<br>
+                E: <a href="#" id="email-link" title="Click to reveal email">Click to show email</a><br>
+                W: ebspartners.com.au
+            </p>
+        </section>
+
+
+
+        <!-- Footer Text -->
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Left -->
+            <div class="footer-left">
+                <p class="footer-address">38 Hines Way, Braybrook, VIC 3019</p>
+                <p class="footer-phone">03 9069 5863</p>
+                <p class="footer-hours">Office Hours: Monday – Friday<br>9AM – 6PM</p>
+                <p class="footer-liability">Liability limited by a scheme approved under Professional Standards
+                    Legislation</p>
+            </div>
+
+            <!-- Middle (Logo) -->
+            <div class="footer-middle">
+                <img src="assets/logo.png" alt="EBS Partners Logo" class="footer-logo">
+            </div>
+
+            <!-- Right -->
+            <div class="footer-right">
+                <p class="footer-desc">EBS Partners is a professional services firm that specializes in providing
+                    comprehensive tax advisory and compliance solutions.</p>
+                <p class="footer-copyright">Copyright © EBS Partners</p>
+            </div>
+        </div>
+
+        <hr class="footer-divider-full">
+
+        <!-- Footer Nav -->
+        <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="whyus.html">Why Us?</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </nav>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Email obfuscation - encoded email address
+        const encodedEmail = 'aW5mb0BlYnNwYXJ0bmVycy5jb20uYXU='; // Base64 encoded
+
+        function decodeEmail() {
+            return atob(encodedEmail);
+        }
+
+        // Show email when clicked
+        document.getElementById('email-link').addEventListener('click', function (e) {
+            e.preventDefault();
+            const email = decodeEmail();
+            this.href = 'mailto:' + email;
+            this.textContent = email;
+            this.title = 'Send email to ' + email;
+        });
+    </script>
+</body>
+
+</html>
