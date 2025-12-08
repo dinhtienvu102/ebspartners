@@ -914,3 +914,27 @@ main {
 .is-hidden {
     display: none;
 }
+
+/* replace customgform */
+.cgf__copy {
+    display: none !important;
+}
+
+.cgf__btn {
+    background-color: #18A85D !important;
+    color: white !important;
+    font-weight: bold !important;
+    padding: 10px 20px !important;
+    border: none !important;
+    border-radius: 4px !important;
+    cursor: pointer !important;
+    text-transform: none !important;
+    transition: background-color 0.3s !important;
+    width: 100% !important;
+    margin-top: 10px !important;
+}
+
+.cgf-theme-base .cgf__container {
+    padding: 0 !important;
+    border: 0 !important;
+}
