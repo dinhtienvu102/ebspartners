@@ -197,14 +197,14 @@ main {
 
 .hero-subtitle {
     font-weight: bold;
-    color: black;
+    color: #fff;
     font-size: 2.125rem;
     /* h4 */
     margin-bottom: 10px;
 }
 
 .hero-title {
-    color: black;
+    color: #fff;
     font-size: 3.75rem;
     /* h2 */
     margin-top: 10px;
