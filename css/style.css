@@ -938,3 +938,41 @@ main {
     padding: 0 !important;
     border: 0 !important;
 }
+
+/* 404 Page Styles */
+.error-section {
+    padding: 80px 20px;
+    text-align: center;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-title {
+    font-size: 6rem;
+    font-weight: bold;
+    color: #18a85d;
+    margin-bottom: 20px;
+}
+
+.error-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #18A85D;
+    color: white;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #005500;
+}
